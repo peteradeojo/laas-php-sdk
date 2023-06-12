@@ -1,0 +1,29 @@
+{
+    "name": "peteradeojo/laas-php-sdk",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Peteradeojo\\LAAS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Peteradeojo\\LAAS\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Peter Ade-Ojo",
+            "email": "peteradeojo@outlook.com"
+        }
+    ],
+    "require-dev": {
+        "vlucas/phpdotenv": "^5.5",
+        "phpunit/phpunit": "^10.2",
+        "brianium/paratest": "^7.1"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.7"
+    }
+}
