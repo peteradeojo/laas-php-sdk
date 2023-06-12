@@ -1,5 +1,6 @@
 {
     "name": "peteradeojo/laas-php-sdk",
+    "description": "A PHP SDK for the LAAS API",
     "type": "library",
     "license": "MIT",
     "autoload": {
