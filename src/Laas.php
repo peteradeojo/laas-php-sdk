@@ -37,10 +37,9 @@ class Laas
         'headers' => [
           'Content-Type' => 'application/json',
           'Accept' => 'application/json',
-          'APP_ID' => $_ENV['LAAS_APP_TOKEN'],
+          'APP_ID' => getenv('LAAS_APP_TOKEN'),
         ]
       ]);
-
     } catch (ClientException $e) {
       $response = $e->getResponse();
     }
