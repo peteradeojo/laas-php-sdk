@@ -43,8 +43,6 @@ class Laas
     } catch (ClientException $e) {
       $response = $e->getResponse();
     }
-
-
     return $response;
   }
 }
