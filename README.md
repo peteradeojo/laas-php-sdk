@@ -39,5 +39,3 @@ Contributions are welcome! If you find a bug or want to add a new feature, pleas
 ## License
 
 Laas is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-```
-
