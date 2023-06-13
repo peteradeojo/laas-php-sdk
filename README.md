@@ -28,7 +28,9 @@ $log->message = 'This is a test message';
 $response = $laas->sendLog($log);
 ```
 
-The `sendLog` method returns a [Guzzle HTTP response](https://docs.guzzlephp.org/en/stable/psr7.html#responses), which you can use to check the status code and response body.
+The `sendLog` method returns a [Guzzle HTTP response](https://docs.guzzlephp.org/en/stable/psr7.html#responses), which you can use to check the status code and response body (or you can completely ignore it).
+
+**Note:** Make sure to set the `LAAS_APP_TOKEN` environment key before using the `sendLog` method.
 
 ## Contributing
 
@@ -37,4 +39,5 @@ Contributions are welcome! If you find a bug or want to add a new feature, pleas
 ## License
 
 Laas is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```
 
