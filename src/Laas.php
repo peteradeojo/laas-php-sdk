@@ -32,7 +32,7 @@ class Laas
     ];
 
     try {
-      $response = $response->post('https://laas-api-nest.onrender.com/logs', [
+      $response = $response->post('https://laas-api-nest.onrender.com/v1/logs', [
         'json' => $data,
         'headers' => [
           'Content-Type' => 'application/json',
