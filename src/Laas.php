@@ -6,6 +6,8 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Peteradeojo\LAAS\LaasLogDTO;
 
+require_once 'util.php';
+
 class Laas
 {
   private static $instance = null;
@@ -32,12 +34,12 @@ class Laas
     ];
 
     try {
-      $response = $response->post('https://laas-api-nest.onrender.com/v1/logs', [
+      $response = $response->post('https://laas-api.up.railway.app/v1/logs', [
         'json' => $data,
         'headers' => [
           'Content-Type' => 'application/json',
           'Accept' => 'application/json',
-          'APP_ID' => getenv('LAAS_APP_TOKEN'),
+          'APP_ID' => env('LAAS_APP_TOKEN'),
         ]
       ]);
     } catch (ClientException $e) {
